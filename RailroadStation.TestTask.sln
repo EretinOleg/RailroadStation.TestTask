@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RailroadStation.TestTask.Co
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8BF1EAA6-DBD2-459C-9C5D-2640534150F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailroadStation.TestTask.Domain", "RailroadStation.TestTask.Domain\RailroadStation.TestTask.Domain.csproj", "{D1BC2DD6-5F8B-4AED-BF57-ABC0328F92FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RailroadStation.TestTask.Domain", "RailroadStation.TestTask.Domain\RailroadStation.TestTask.Domain.csproj", "{D1BC2DD6-5F8B-4AED-BF57-ABC0328F92FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailroadStation.TestTask.Persistence", "RailroadStation.TestTask.Persistence\RailroadStation.TestTask.Persistence.csproj", "{42CCA178-A30A-4158-B822-835B07EDF1BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{D1BC2DD6-5F8B-4AED-BF57-ABC0328F92FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1BC2DD6-5F8B-4AED-BF57-ABC0328F92FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1BC2DD6-5F8B-4AED-BF57-ABC0328F92FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42CCA178-A30A-4158-B822-835B07EDF1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42CCA178-A30A-4158-B822-835B07EDF1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42CCA178-A30A-4158-B822-835B07EDF1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42CCA178-A30A-4158-B822-835B07EDF1BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

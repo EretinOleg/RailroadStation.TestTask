@@ -16,7 +16,7 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
         public Park(long key) : base(key) { }
 
         /// <summary>
-        /// Добавляет отрезок к пути
+        /// Добавляет путь
         /// </summary>
         public UnitResult<Error> AddRoute(Route route)
         {
@@ -26,5 +26,7 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
             _routes.Add(route);
             return UnitResult.Success<Error>();
         }
+
+        public override string ToString() => $"Парк {Id}";
     }
 }

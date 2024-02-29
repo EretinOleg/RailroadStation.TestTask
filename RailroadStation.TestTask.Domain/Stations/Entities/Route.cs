@@ -38,5 +38,30 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
             _segments.Add(last + 1, segment);
             return UnitResult.Success<Error>();
         }
+
+        /// <summary>
+        /// Начало пути
+        /// </summary>
+        /// <returns></returns>
+        public Point? GetStart() => _segments.Any() ? _segments[1].Start : null;
+
+        /// <summary>
+        /// Конец пути
+        /// </summary>
+        public Point? GetEnd()
+        {
+            if (!_segments.Any())
+                return null;
+
+            var last = _segments.Keys.Max();
+            return _segments[last].End;
+        }
+
+        /// <summary>
+        /// Общая длина пути
+        /// </summary>
+        public decimal GetLength() => _segments.Any() ? _segments.Sum(x => x.Value.GetLength()) : 0.0m;
+
+        public override string ToString() => $"Путь {Id}";
     }
 }
