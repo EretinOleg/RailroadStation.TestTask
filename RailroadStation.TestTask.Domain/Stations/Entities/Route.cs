@@ -1,5 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
 using RailroadStation.TestTask.Domain.Core.Primitives;
+using RailroadStation.TestTask.Domain.Stations.Errors;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -61,6 +62,21 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
         /// Общая длина пути
         /// </summary>
         public decimal GetLength() => _segments.Any() ? _segments.Sum(x => x.Value.GetLength()) : 0.0m;
+
+        /// <summary>
+        /// Получить все точки пути
+        /// </summary>
+        public ICollection<Point> CollectPoints() =>
+            _segments.Aggregate(new List<Point>(),
+                (points, route) =>
+                {
+                    points.Add(route.Value.Start);
+                    points.Add(route.Value.End);
+
+                    return points;
+                })
+            .Distinct()
+            .ToList();
 
         public override string ToString() => $"Путь {Id}";
     }

@@ -27,6 +27,21 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
             return UnitResult.Success<Error>();
         }
 
+        /// <summary>
+        /// Получить все точки парка
+        /// </summary>
+        public ICollection<Point> CollectPoints() =>
+            _routes.Aggregate(new List<Point>(),
+                (points, route) =>
+                {
+                    points.AddRange(route.CollectPoints());
+
+                    return points;
+                })
+            .Distinct()
+            .ToList();
+
+
         public override string ToString() => $"Парк {Id}";
     }
 }

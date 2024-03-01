@@ -6,10 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR.Contracts" Version="2.0.1" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\RailroadStation.TestTask.Infrastructure\RailroadStation.TestTask.Infrastructure.csproj" />
     <ProjectReference Include="..\RailroadStation.TestTask.Persistence\RailroadStation.TestTask.Persistence.csproj" />
   </ItemGroup>
 

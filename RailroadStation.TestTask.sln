@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RailroadStation.TestTask.Do
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailroadStation.TestTask.Persistence", "RailroadStation.TestTask.Persistence\RailroadStation.TestTask.Persistence.csproj", "{42CCA178-A30A-4158-B822-835B07EDF1BC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailroadStation.TestTask.Application", "RailroadStation.TestTask.Application\RailroadStation.TestTask.Application.csproj", "{0399F5E4-2BC3-4C4A-8685-A57D36A35472}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailroadStation.TestTask.Infrastructure", "RailroadStation.TestTask.Infrastructure\RailroadStation.TestTask.Infrastructure.csproj", "{73334F1A-F6C1-4BAF-8332-5C757AACBB75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +33,14 @@ Global
 		{42CCA178-A30A-4158-B822-835B07EDF1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42CCA178-A30A-4158-B822-835B07EDF1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42CCA178-A30A-4158-B822-835B07EDF1BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0399F5E4-2BC3-4C4A-8685-A57D36A35472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0399F5E4-2BC3-4C4A-8685-A57D36A35472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0399F5E4-2BC3-4C4A-8685-A57D36A35472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0399F5E4-2BC3-4C4A-8685-A57D36A35472}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73334F1A-F6C1-4BAF-8332-5C757AACBB75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73334F1A-F6C1-4BAF-8332-5C757AACBB75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73334F1A-F6C1-4BAF-8332-5C757AACBB75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73334F1A-F6C1-4BAF-8332-5C757AACBB75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
