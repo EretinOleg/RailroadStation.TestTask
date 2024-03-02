@@ -5,8 +5,8 @@ using System.Collections.Generic;
 
 namespace RailroadStation.TestTask.Persistence.Repositories
 {
-    public class ParkRepository : Repository<Park>, IParkRepository
+    public class StationRepository: Repository<Station>, IStationRepository
     {
-        protected override IEnumerable<Park> DataSource => Parks.Data;
+        protected override IEnumerable<Station> DataSource => Stations.Data;
     }
 }

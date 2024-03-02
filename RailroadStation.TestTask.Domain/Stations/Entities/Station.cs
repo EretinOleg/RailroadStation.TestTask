@@ -61,5 +61,14 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
             
             return UnitResult.Success<Error>();
         }
+
+        /// <summary>
+        /// Получить все пути станции
+        /// </summary>
+        public ICollection<Route> CollectRoutes() =>
+            _parks.SelectMany(p => p.Routes)
+            .Union(_routes)
+            .Distinct()
+            .ToList();
     }
 }
