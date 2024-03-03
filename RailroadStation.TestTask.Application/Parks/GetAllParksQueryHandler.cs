@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace RailroadStation.TestTask.Application.Parks
 {
-    internal class GetAllParksQueryHandler : IQueryHandler<GetAllParksQuery, ICollection<Park>>
+    public class GetAllParksQueryHandler : IQueryHandler<GetAllParksQuery, ICollection<Park>>
     {
         private readonly IParkRepository _parkRepository;
 

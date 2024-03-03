@@ -68,10 +68,10 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
         /// </summary>
         public ICollection<Point> CollectPoints() =>
             _segments.Aggregate(new List<Point>(),
-                (points, route) =>
+                (points, segment) =>
                 {
-                    points.Add(route.Value.Start);
-                    points.Add(route.Value.End);
+                    points.Add(segment.Value.Start);
+                    points.Add(segment.Value.End);
 
                     return points;
                 })

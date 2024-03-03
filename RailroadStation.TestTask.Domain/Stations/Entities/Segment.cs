@@ -24,6 +24,9 @@ namespace RailroadStation.TestTask.Domain.Stations.Entities
             if (start == end)
                 return Result.Failure<Segment, Error>(Errors.Segment.SamePoints);
 
+            if (decimal.Equals(start.X, end.X) && decimal.Equals(start.Y, end.Y))
+                return Result.Failure<Segment, Error>(Errors.Segment.SamePoints);
+
             return Result.Success<Segment, Error>(new Segment(key, start, end));
         }
 
